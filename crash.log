@@ -7,16 +7,16 @@ MESSAGE: SIGABRT: Abnormal termination
 STACK TRACE:
 
   #0
-    (dbghelp: @0x7ff6f36146e0[cataclysm-tiles.exe+0x2346e0]), 
+    (dbghelp: @0x7ff707b646e0[cataclysm-tiles.exe+0x2346e0]), 
     (libbacktrace: debug_write_backtrace(std::ostream&)+0x9e@0x1402346e0),
     0x1402346e0    src/debug.cpp:1119    debug_write_backtrace(std::ostream&)
   #1
-    (dbghelp: @0x7ff6f35fd0d1[cataclysm-tiles.exe+0x21d0d1]), 
+    (dbghelp: @0x7ff707b4d0d1[cataclysm-tiles.exe+0x21d0d1]), 
     (libbacktrace: log_crash+0x1d2@0x14021d0d1),
     0x14021d0d1    /opt/mxe/usr/lib/gcc/x86_64-w64-mingw32.static.gcc11/11.2.0/include/c++/sstream:917    std::__cxx11::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >::str() const
     0x14021d0d1    src/crash.cpp:85    log_crash
   #2
-    (dbghelp: @0x7ff6f35fd2ff[cataclysm-tiles.exe+0x21d2ff]), 
+    (dbghelp: @0x7ff707b4d2ff[cataclysm-tiles.exe+0x21d2ff]), 
     (libbacktrace: signal_handler+0x52@0x14021d2ff),
     0x14021d2ff    src/crash.cpp:137    signal_handler
   #3
@@ -28,64 +28,64 @@ STACK TRACE:
     (backtrace_syminfo failed: errno = -1, msg = no symbol table in PE/COFF executable),
     (backtrace_pcinfo failed: errno = -1, msg = no debug info in PE/COFF executable),
   #5
-    (dbghelp: @0x7ff6f455116b[cataclysm-tiles.exe+0x117116b]), 
+    (dbghelp: @0x7ff708aa116b[cataclysm-tiles.exe+0x117116b]), 
     (libbacktrace: jmapgen_vehicle::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, mapgen_parameters const&, jmapgen_int const&, jmapgen_int const&) const+0x1db@0x14117116b),
     0x14117116b    src/mapgen.cpp:2388    vehicle_bounds
     0x14117116b    src/mapgen.cpp:2487    jmapgen_vehicle::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, mapgen_parameters const&, jmapgen_int const&, jmapgen_int const&) const
   #6
-    (dbghelp: @0x7ff6f39c374a[cataclysm-tiles.exe+0x5e374a]), 
+    (dbghelp: @0x7ff707f1374a[cataclysm-tiles.exe+0x5e374a]), 
     (libbacktrace: jmapgen_objects::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, mapgen_parameters const&) const+0x3a@0x1405e374a),
     0x1405e374a    /opt/mxe/usr/lib/gcc/x86_64-w64-mingw32.static.gcc11/11.2.0/include/c++/bits/stl_iterator.h:1038    __gnu_cxx::__normal_iterator<std::pair<jmapgen_place, std::__shared_ptr<jmapgen_piece const, (__gnu_cxx::_Lock_policy)0> > const*, std::vector<std::pair<jmapgen_place, std::__shared_ptr<jmapgen_piece const, (__gnu_cxx::_Lock_policy)0> >, std::allocator<std::pair<jmapgen_place, std::__shared_ptr<jmapgen_piece const, (__gnu_cxx::_Lock_policy)0> > > > >::operator++()
     0x1405e374a    src/mapgen.cpp:4354    jmapgen_objects::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, mapgen_parameters const&) const
   #7
-    (dbghelp: @0x7ff6f39ca765[cataclysm-tiles.exe+0x5ea765]), 
+    (dbghelp: @0x7ff707f1a765[cataclysm-tiles.exe+0x5ea765]), 
     (libbacktrace: mapgen_function_json::check() const+0xd@0x1405ea765),
     0x1405ea765    src/mapgen.cpp:4277    mapgen_function_json::check() const
   #8
-    (dbghelp: @0x7ff6f433aaf7[cataclysm-tiles.exe+0xf5aaf7]), 
+    (dbghelp: @0x7ff70888aaf7[cataclysm-tiles.exe+0xf5aaf7]), 
     (libbacktrace: mapgen_factory::check_consistency()+0x57@0x140f5aaf7),
     0x140f5aaf7    src/mapgen.cpp:376    mapgen_basic_container::check_consistency()
     0x140f5aaf7    src/mapgen.cpp:444    mapgen_factory::check_consistency()
   #9
-    (dbghelp: @0x7ff6f39ca7f4[cataclysm-tiles.exe+0x5ea7f4]), 
+    (dbghelp: @0x7ff707f1a7f4[cataclysm-tiles.exe+0x5ea7f4]), 
     (libbacktrace: check_mapgen_definitions()+0x1b@0x1405ea7f4),
     0x1405ea7f4    src/mapgen.cpp:554    check_mapgen_definitions()
   #10
-    (dbghelp: @0x7ff6f37bfcb3[cataclysm-tiles.exe+0x3dfcb3]), 
+    (dbghelp: @0x7ff707d0fcb3[cataclysm-tiles.exe+0x3dfcb3]), 
     (libbacktrace: DynamicDataLoader::check_consistency(loading_ui&)+0x1f1d@0x1403dfcb3),
     0x1403dfcb3    src/init.cpp:846    DynamicDataLoader::check_consistency(loading_ui&)
   #11
-    (dbghelp: @0x7ff6f37c16a6[cataclysm-tiles.exe+0x3e16a6]), 
+    (dbghelp: @0x7ff707d116a6[cataclysm-tiles.exe+0x3e16a6]), 
     (libbacktrace: DynamicDataLoader::finalize_loaded_data(loading_ui&)+0x1994@0x1403e16a6),
     0x1403e16a6    src/init.cpp:748    DynamicDataLoader::finalize_loaded_data(loading_ui&)
   #12
-    (dbghelp: @0x7ff6f37156ac[cataclysm-tiles.exe+0x3356ac]), 
+    (dbghelp: @0x7ff707c656ac[cataclysm-tiles.exe+0x3356ac]), 
     (libbacktrace: game::load_world_modfiles(loading_ui&)+0x440@0x1403356ac),
     0x1403356ac    /opt/mxe/usr/lib/gcc/x86_64-w64-mingw32.static.gcc11/11.2.0/include/c++/bits/stl_set.h:281    ~set
     0x1403356ac    /opt/mxe/usr/lib/gcc/x86_64-w64-mingw32.static.gcc11/11.2.0/include/c++/bits/stl_set.h:281    std::set<string_id<MOD_INFORMATION>, std::less<string_id<MOD_INFORMATION> >, std::allocator<string_id<MOD_INFORMATION> > >::~set()
     0x1403356ac    src/game.cpp:2893    game::load_world_modfiles(loading_ui&)
   #13
-    (dbghelp: @0x7ff6f37354f2[cataclysm-tiles.exe+0x3554f2]), 
+    (dbghelp: @0x7ff707c854f2[cataclysm-tiles.exe+0x3554f2]), 
     (libbacktrace: game::setup()+0xe8@0x1403554f2),
     0x1403554f2    src/game.cpp:733    game::setup()
   #14
-    (dbghelp: @0x7ff6f3961219[cataclysm-tiles.exe+0x581219]), 
+    (dbghelp: @0x7ff707eb1219[cataclysm-tiles.exe+0x581219]), 
     (libbacktrace: main_menu::new_character_tab()+0x967@0x140581219),
     0x140581219    src/main_menu.cpp:971    main_menu::new_character_tab()
   #15
-    (dbghelp: @0x7ff6f3962cd6[cataclysm-tiles.exe+0x582cd6]), 
+    (dbghelp: @0x7ff707eb2cd6[cataclysm-tiles.exe+0x582cd6]), 
     (libbacktrace: main_menu::opening_screen()+0x1154@0x140582cd6),
     0x140582cd6    src/main_menu.cpp:863    main_menu::opening_screen()
   #16
-    (dbghelp: @0x7ff6f49df94e[cataclysm-tiles.exe+0x15ff94e]), 
+    (dbghelp: @0x7ff708f2f94e[cataclysm-tiles.exe+0x15ff94e]), 
     (libbacktrace: main+0x1d98@0x1415ff94e),
     0x1415ff94e    src/main.cpp:812    main
   #17
-    (dbghelp: @0x7ff6f33e13c1[cataclysm-tiles.exe+0x13c1]), 
+    (dbghelp: @0x7ff7079313c1[cataclysm-tiles.exe+0x13c1]), 
     (libbacktrace: _tmainCRTStartup+0x231@0x1400013c1),
     0x1400013c1    /opt/mxe/tmp-gcc-x86_64-w64-mingw32.static.gcc11/gcc-11.2.0.build_/mingw-w64-v9.0.0/mingw-w64-crt/crt/crtexe.c:323    __tmainCRTStartup
   #18
-    (dbghelp: @0x7ff6f33e14d6[cataclysm-tiles.exe+0x14d6]), 
+    (dbghelp: @0x7ff7079314d6[cataclysm-tiles.exe+0x14d6]), 
     (libbacktrace: WinMainCRTStartup+0x16@0x1400014d6),
     0x1400014d6    /opt/mxe/tmp-gcc-x86_64-w64-mingw32.static.gcc11/gcc-11.2.0.build_/mingw-w64-v9.0.0/mingw-w64-crt/crt/crtexe.c:178    WinMainCRTStartup
   #19

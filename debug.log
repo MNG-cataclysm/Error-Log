@@ -10209,3 +10209,137 @@ Backtrace emission took 1 seconds.
 10:51:45.401 INFO : Setting language to: 'en'
 10:51:45.471 WARNING : opendir [./mods] failed with "No such process".
 10:51:49.322 WARNING : opendir [./save/Fantasy TEST/mods] failed with "No such process".
+
+
+-----------------------------------------
+11:04:32.802 : Starting log.
+11:04:32.802 INFO : Cataclysm DDA version ab60b1b
+11:04:32.802 INFO : [main] C locale set to C
+11:04:32.802 INFO : [main] C++ locale set to C
+11:04:32.802 INFO : SDL version used during compile is 2.0.14
+11:04:32.802 INFO : SDL version used during linking and in runtime is 2.0.14
+11:04:32.846 INFO : Number of render drivers on your system: 5
+11:04:32.846 INFO : Render driver: 0/direct3d
+11:04:32.846 INFO : Render driver: 1/direct3d11
+11:04:32.846 INFO : Render driver: 2/opengl
+11:04:32.846 INFO : Render driver: 3/opengles2
+11:04:32.846 INFO : Render driver: 4/software
+11:04:32.850 INFO : [options] C locale set to C
+11:04:32.850 INFO : [options] C++ locale set to C
+11:04:32.850 INFO : Setting language to: 'en'
+11:04:32.850 INFO : [i18n] Scanning core translations from lang/mo/
+11:04:32.850 INFO : [i18n] Scanning mod translations from ./mods/
+11:04:32.850 WARNING : opendir [./mods/] failed with "No such process".
+11:04:32.972 INFO : Active renderer: 1/direct3d11
+11:04:33.739 INFO : USE_COLOR_MODULATED_TEXTURES is set to 0
+11:04:33.754 INFO : Setting language to: 'en'
+11:04:33.842 WARNING : opendir [./mods] failed with "No such process".
+11:04:37.896 WARNING : opendir [./save/Fantasy TEST/mods] failed with "No such process".
+
+
+-----------------------------------------
+11:29:35.843 : Starting log.
+11:29:35.843 INFO : Cataclysm DDA version ab60b1b
+11:29:35.843 INFO : [main] C locale set to C
+11:29:35.843 INFO : [main] C++ locale set to C
+11:29:35.843 INFO : SDL version used during compile is 2.0.14
+11:29:35.843 INFO : SDL version used during linking and in runtime is 2.0.14
+11:29:35.997 INFO : Number of render drivers on your system: 5
+11:29:35.997 INFO : Render driver: 0/direct3d
+11:29:35.997 INFO : Render driver: 1/direct3d11
+11:29:35.997 INFO : Render driver: 2/opengl
+11:29:35.997 INFO : Render driver: 3/opengles2
+11:29:35.997 INFO : Render driver: 4/software
+11:29:36.004 INFO : [options] C locale set to C
+11:29:36.004 INFO : [options] C++ locale set to C
+11:29:36.004 INFO : Setting language to: 'en'
+11:29:36.004 INFO : [i18n] Scanning core translations from lang/mo/
+11:29:36.004 INFO : [i18n] Scanning mod translations from ./mods/
+11:29:36.004 WARNING : opendir [./mods/] failed with "No such process".
+11:29:36.146 INFO : Active renderer: 1/direct3d11
+11:29:36.882 INFO : USE_COLOR_MODULATED_TEXTURES is set to 0
+11:29:36.969 INFO : Setting language to: 'en'
+11:29:37.274 WARNING : opendir [./mods] failed with "No such process".
+11:29:54.236 ERROR : (error message will follow backtrace)
+  #0
+    (dbghelp: @0x7ff6f36146e0[cataclysm-tiles.exe+0x2346e0]), 
+    (libbacktrace: debug_write_backtrace(std::ostream&)+0x9e@0x1402346e0),
+    0x1402346e0    src/debug.cpp:1119    debug_write_backtrace(std::ostream&)
+  #1
+    (dbghelp: @0x7ff6f3615534[cataclysm-tiles.exe+0x235534]), 
+    (libbacktrace: DebugLog(DebugLevel, DebugClass)+0x20e@0x140235534),
+    0x140235534    /opt/mxe/usr/x86_64-w64-mingw32.static.gcc11/include/time.h:230    time
+    0x140235534    src/debug.cpp:1447    DebugLog(DebugLevel, DebugClass)
+  #2
+    (dbghelp: @0x7ff6f361658e[cataclysm-tiles.exe+0x23658e]), 
+    (libbacktrace: realDebugmsg(char const*, char const*, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ac@0x14023658e),
+    0x14023658e    src/debug.cpp:508    realDebugmsg(char const*, char const*, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  #3
+    (dbghelp: @0x7ff6f4263914[cataclysm-tiles.exe+0xe83914]), 
+    (libbacktrace: void realDebugmsg<char const*>(char const*, char const*, char const*, char const*, char const*&&)+0x94@0x140e83914),
+    0x140e83914    /opt/mxe/usr/lib/gcc/x86_64-w64-mingw32.static.gcc11/11.2.0/include/c++/bits/basic_string.h:671    std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()
+    0x140e83914    src/debug.h:78    void realDebugmsg<char const*>(char const*, char const*, char const*, char const*, char const*&&)
+  #4
+    (dbghelp: @0x7ff6f3961428[cataclysm-tiles.exe+0x581428]), 
+    (libbacktrace: main_menu::new_character_tab()+0xb76@0x140581428),
+    0x140581428    src/main_menu.cpp:975    main_menu::new_character_tab()
+  #5
+    (dbghelp: @0x7ff6f3962cd6[cataclysm-tiles.exe+0x582cd6]), 
+    (libbacktrace: main_menu::opening_screen()+0x1154@0x140582cd6),
+    0x140582cd6    src/main_menu.cpp:863    main_menu::opening_screen()
+  #6
+    (dbghelp: @0x7ff6f49df94e[cataclysm-tiles.exe+0x15ff94e]), 
+    (libbacktrace: main+0x1d98@0x1415ff94e),
+    0x1415ff94e    src/main.cpp:812    main
+  #7
+    (dbghelp: @0x7ff6f33e13c1[cataclysm-tiles.exe+0x13c1]), 
+    (libbacktrace: _tmainCRTStartup+0x231@0x1400013c1),
+    0x1400013c1    /opt/mxe/tmp-gcc-x86_64-w64-mingw32.static.gcc11/gcc-11.2.0.build_/mingw-w64-v9.0.0/mingw-w64-crt/crt/crtexe.c:323    __tmainCRTStartup
+  #8
+    (dbghelp: @0x7ff6f33e14d6[cataclysm-tiles.exe+0x14d6]), 
+    (libbacktrace: WinMainCRTStartup+0x16@0x1400014d6),
+    0x1400014d6    /opt/mxe/tmp-gcc-x86_64-w64-mingw32.static.gcc11/gcc-11.2.0.build_/mingw-w64-v9.0.0/mingw-w64-crt/crt/crtexe.c:178    WinMainCRTStartup
+  #9
+    (dbghelp: BaseThreadInitThunk+0x1d@0x7ff90e6526bd[KERNEL32.DLL+0x126bd]), 
+    (backtrace_syminfo failed: errno = -1, msg = no symbol table in PE/COFF executable),
+    (backtrace_pcinfo failed: errno = -1, msg = no debug info in PE/COFF executable),
+  #10
+    (dbghelp: RtlUserThreadStart+0x28@0x7ff90fe4dfb8[ntdll.dll+0x5dfb8]), 
+    (backtrace_syminfo failed: errno = -1, msg = no symbol table in PE/COFF executable),
+    (backtrace_pcinfo failed: errno = -1, msg = no debug info in PE/COFF executable),
+Backtrace emission took 0 seconds.
+(continued from above) ERROR : src/main_menu.cpp:973 [bool main_menu::new_character_tab()] Error: Json error: data/mods/Fantasy-master/blacklist and other world changing stuff/regional2.json:880:7: expecting: string constant instead got: }
+
+      "parks": {
+        "park": 0,
+      }
+      ^
+       ,
+      "shops": {
+        "bus_station": 0
+
+
+
+-----------------------------------------
+22:48:04.302 : Starting log.
+22:48:04.302 INFO : Cataclysm DDA version ab60b1b
+22:48:04.302 INFO : [main] C locale set to C
+22:48:04.302 INFO : [main] C++ locale set to C
+22:48:04.303 INFO : SDL version used during compile is 2.0.14
+22:48:04.303 INFO : SDL version used during linking and in runtime is 2.0.14
+22:48:04.425 INFO : Number of render drivers on your system: 5
+22:48:04.425 INFO : Render driver: 0/direct3d
+22:48:04.425 INFO : Render driver: 1/direct3d11
+22:48:04.425 INFO : Render driver: 2/opengl
+22:48:04.425 INFO : Render driver: 3/opengles2
+22:48:04.425 INFO : Render driver: 4/software
+22:48:04.432 INFO : [options] C locale set to C
+22:48:04.432 INFO : [options] C++ locale set to C
+22:48:04.432 INFO : Setting language to: 'en'
+22:48:04.432 INFO : [i18n] Scanning core translations from lang/mo/
+22:48:04.432 INFO : [i18n] Scanning mod translations from ./mods/
+22:48:04.434 WARNING : opendir [./mods/] failed with "No such process".
+22:48:04.551 INFO : Active renderer: 1/direct3d11
+22:48:04.889 INFO : USE_COLOR_MODULATED_TEXTURES is set to 0
+22:48:04.961 INFO : Setting language to: 'en'
+22:48:05.232 WARNING : opendir [./mods] failed with "No such process".
